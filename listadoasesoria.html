@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Ruzder/grupal/main/icono.com%20(1).png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/estiloNEW.css">
+    <title>Listado de Asesorias</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6"> Contactanos +56 9 3641 7409 </p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 " id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zurita & Seguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indexN.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Crear Capacitación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- imagen principal -->
+
+    <div class="fondo">
+        <h1>Zurita & Seguridad</h1>
+        <h2>Somos seguridad y bienestar de tus equipos de trabajo</h2>
+    </div>
+    <!-- cuerpo de trabajo  -->
+    <h4>Listado de Asesorias</h4>
+    <h4>Clientes</h4>
+    <table class="table" id="table_b">
+        <thead>
+            <tr>
+                <th>ID de Asesoria</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Profesional</th>
+                <th>Mejoras</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="td_a">00110</td>
+                <td class="td_a">25/03/2021</td>
+                <td class="td_a">Embarcadero "Puro Filete"</td>
+                <td class="td_a">Alam Brito</td>
+                <td><a href="#mejoras" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Mostar">&#xe148;</i></a></td>
+            </tr>
+            <tr>
+                <td class="td_a">00111</td>
+                <td class="td_a">15/05/2021</td>
+                <td class="td_a">Ferreteria "El Clavito"</td>
+                <td class="td_a">Pablo Marmol</td>
+                <td><a href="#mejoras" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Mostar">&#xe148;</i></a></td>
+            </tr>
+            <tr>
+                <td class="td_a">00112</td>
+                <td class="td_a">10/08/2021</td>
+                <td class="td_a">Maestranza "Nos"</td>
+                <td class="td_a">Marta Sanchez</td>
+                <td><a href="#mejoras" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Mostar">&#xe148;</i></a></td>
+            </tr>
+            <tr>
+                <td class="td_a">00113</td>
+                <td class="td_a">01/11/2021</td>
+                <td class="td_a">Mecanica "El Toreto"</td>
+                <td class="td_a">Elba Zurita</td>
+                <td><a href="#mejoras" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Mostar">&#xe148;</i></a></td>
+            </tr>
+            <tr>
+                <td class="td_a">00114</td>
+                <td class="td_a">16/04/2021</td>
+                <td class="td_a">Maestranza "El Puerto"</td>
+                <td class="td_a">Jorquera Muñoz</td>
+                <td>
+                    <a href="#mejoras" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Mostar">&#xe148;</i></a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modificar Modal HTML -->
+    <div id="mejoras" class="modal fade" tabindex="-1" style="opacity: 100;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h2 class="modal-title">Actividades de Mejora</h2>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Uso obligatoria de guantes dentro del area de trabajo.</label>
+                        </div>
+                        <div class="form-group">
+                            <label>Implementar cinta antideslizante en todas las escaleras y accesos.</label>
+                        </div>
+                        <div class="form-group">
+                            <label>Siempre portar antiparras.</label>
+                        </div>
+                        <div class="form-group">
+                            <label>Poner brazo neumatico a todas las puertas de las instalaciones.</label>
+                        </div>
+                        <div class="form-group">
+                            <label>Zapatos de seguridad dentro de las area de trabajo y traslado.</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-primary" data-dismiss="modal" value="Aceptar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button id="cambio1">Cambio estilo 1</button>
+        <button id="cambio2">Cambio estilo 2</button>
+        <button id="cambio3">Cambio estilo 3</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#cambio1").on("click", function() {
+                $("#table_b>thead").addClass('table-dark');
+                $("#table_b>tbody").addClass('table-dark');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#cambio2").on("click", function() {
+                $("#table_b>thead").addClass('table-danger');
+                $("#table_b>tbody").addClass('table-warning');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#cambio3").on("click", function() {
+                $("#table_b>thead").addClass('table-info');
+                $("#table_b>tbody").addClass('table-success');
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- footer  -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="fs-5 px-3 pt-3" href="#!"><i class="bi bi-facebook"></i
+                    ></a>
+                <!-- Twitter -->
+                <a class="fs-5 px-3 pt-3" href="#!"><i class="bi bi-twitter"></i
+                    ></a>
+                <!-- Instagram -->
+                <a class="fs-5 px-3 pt-3" href="#!"><i class="bi bi-instagram"></i
+                    ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 fs-5 px-3 text-dark ">
+            © 2021 Copyright:
+            <p class="text-dark fs-5">Zurita & Seguridad. Todos Los Derechos Reservados 2021</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+
+</body>
+
+</html>
